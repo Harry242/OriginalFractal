@@ -2,7 +2,7 @@ public void setup()
 {
   size(500,500);
 }
-public void kochsSnowflake(float len, int n, int col)
+public void kochsSnowflake(float len, int n, int col, int center)
 {
   if (n==0)
   {
@@ -16,7 +16,7 @@ public void kochsSnowflake(float len, int n, int col)
   {
     if (n%2==0)
     {
-      triangle(250-(len-len/(3*n)),-(250+len/2);
+      triangle(250+(len/2-len/(3*n)),250+len/2-(Math.sqrt(3)/(2*n),);
       triangle(len/3);
       triangle();
       kochsSnowflake(len,n-1,col+5);
